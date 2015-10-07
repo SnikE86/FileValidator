@@ -47,6 +47,7 @@
     <Compile Include="FileValidator.cs" />
     <Compile Include="IValidator.cs" />
     <Compile Include="LogFile.cs" />
+    <Compile Include="ValidatorFieldLength.cs" />
     <Compile Include="ValidatorNoNumbers.cs" />
     <Compile Include="ValidatorNumber.cs" />
     <Compile Include="Program.cs" />
