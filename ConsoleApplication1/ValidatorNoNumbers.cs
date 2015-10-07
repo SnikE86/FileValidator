@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FileValidator
 {
-    class NumberValidator : IValidator
+    class ValidatorNoNumbers : IValidator
     {
         public Boolean ValidateField(string fieldText, string errorText)
         {
             for (int index = 0; index < fieldText.Length; index++)
             {
-                if (!char.IsNumber(fieldText, index))
+                if (char.IsNumber(fieldText, index))
                 {
-                    errorText = "Field does not only contain numbers: " + fieldText;
+                    errorText = "Field contains a number: " + fieldText;
                     return false;
                 }
             }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FileValidator
@@ -13,18 +14,11 @@ namespace FileValidator
 
         private LogFile logFile;
 
-        public FileValidator()
+        public FileValidator(Dictionary<int, IValidator> aValidators, string errors_file)
         {
-            IValidator dateValidator = new DateValidator();
-            IValidator numberValidator = new NumberValidator();
-            IValidator noNumbersValidator = new NoNumbersValidator();
+            validators = aValidators;
 
-            //These need to be mapped as per the specification
-            validators.Add(0, dateValidator);
-            validators.Add(2, numberValidator);
-            validators.Add(5, noNumbersValidator);
-
-            logFile = new LogFile("C:\\LogFile.txt");
+            logFile = new LogFile(errors_file);
         }
 
         public void ValidateFile(string file)
@@ -56,7 +50,7 @@ namespace FileValidator
                 logFile.WriteLine(e.Message);
             }
         }
-
+ 
         private Boolean validateLine(string line, string errorText)
         {
             string[] fields = line.Split(','); //this could be pipe

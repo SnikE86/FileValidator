@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,14 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateValidator.cs" />
+    <Compile Include="ValidatorDate_YYYYMMDD.cs" />
+    <Compile Include="ValidatorDate_YYMMDD.cs" />
     <Compile Include="FileValidator.cs" />
     <Compile Include="IValidator.cs" />
     <Compile Include="LogFile.cs" />
-    <Compile Include="NoNumbersValidator.cs" />
-    <Compile Include="NumberValidator.cs" />
+    <Compile Include="ValidatorNoNumbers.cs" />
+    <Compile Include="ValidatorNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidatorsProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
