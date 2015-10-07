@@ -8,6 +8,6 @@ namespace FileValidator
 {
     interface IValidator
     {
-        Boolean ValidateField(string fieldText, string errorText);
+        Boolean ValidateField(string fieldText, out string errorText);
     }
 }

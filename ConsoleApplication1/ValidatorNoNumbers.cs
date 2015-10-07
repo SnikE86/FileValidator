@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FileValidator
 {
-    class ValidatorNoNumbers : IValidator
+    public class ValidatorNoNumbers : IValidator
     {
-        public Boolean ValidateField(string fieldText, string errorText)
+        public Boolean ValidateField(string fieldText, out string errorText)
         {
             for (int index = 0; index < fieldText.Length; index++)
             {
@@ -18,6 +18,7 @@ namespace FileValidator
                     return false;
                 }
             }
+            errorText = "";
             return true;
         }
     }

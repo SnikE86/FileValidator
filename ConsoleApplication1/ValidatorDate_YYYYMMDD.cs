@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FileValidator
 {
-    class ValidatorDate_YYYYMMDD : IValidator
+    public class ValidatorDate_YYYYMMDD : IValidator
     {
-        public Boolean ValidateField(string fieldText, string errorText)
+        public Boolean ValidateField(string fieldText, out string errorText)
         {
             //We want to validate that field is in format YYYYMMDD
 
@@ -30,6 +30,7 @@ namespace FileValidator
                                         {
                                             if (char.IsNumber(fieldText, 7)) //D can be any value
                                             {
+                                                errorText = "";
                                                 return true;
                                             }
                                             else

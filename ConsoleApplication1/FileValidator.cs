@@ -39,7 +39,7 @@ namespace FileValidator
                     {
                         lineIndex++;
 
-                        if (!validateLine(line, errorText))
+                        if (!validateLine(line, out errorText))
                         {
                             logFile.WriteLine("Error with file: " + file + " on line: " + lineIndex + " " + errorText);
                         }
@@ -53,7 +53,7 @@ namespace FileValidator
             }
         }
  
-        private Boolean validateLine(string line, string errorText)
+        private Boolean validateLine(string line, out string errorText)
         {
             string[] fields = line.Split(delimiter[0]);
 
@@ -65,12 +65,13 @@ namespace FileValidator
 
                 foreach (IValidator validator in validatorList)
                 {
-                    if (!validator.ValidateField(field, errorText))
+                    if (!validator.ValidateField(field, out errorText))
                     {
                         return false;
                     }
                 }
             }
+            errorText = "";
             return true;
         }
     }

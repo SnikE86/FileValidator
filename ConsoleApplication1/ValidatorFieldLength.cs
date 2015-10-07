@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FileValidator
 {
-    class ValidatorFieldLength : IValidator
+    public class ValidatorFieldLength : IValidator
     {
         private int fieldLength;
 
@@ -16,13 +16,14 @@ namespace FileValidator
             
         }
 
-        public Boolean ValidateField(string fieldText, string errorText)
+        public Boolean ValidateField(string fieldText, out string errorText)
         {
             if(fieldText.Length == fieldLength){
+                errorText = "";
                 return true;
             }
             else{
-                errorText = "Field is not of length " + fieldLength.ToString() + ": " + fieldText;
+                errorText = "Field is not correct length (expected " + fieldLength.ToString() + "): " + fieldText;
                 return false;
             }
         }
