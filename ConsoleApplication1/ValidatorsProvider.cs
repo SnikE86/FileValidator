@@ -33,7 +33,7 @@ namespace FileValidator
                         validator = new ValidatorDate_YYYYMMDD();
                         break;
                     case "NumberValidator":
-                        validator = new NumberValidator();
+                        validator = new ValidatorNumber();
                         break;
                     case "NoNumbersValidator":
                         validator = new ValidatorNoNumbers();
