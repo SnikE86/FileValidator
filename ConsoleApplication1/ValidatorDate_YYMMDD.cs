@@ -66,7 +66,7 @@ namespace FileValidator
             }
             else
             {
-                errorText = "Field is too long: " + fieldText;
+                errorText = "Field is not correct length (expected 6): " + fieldText;
                 return false;
             }
         }

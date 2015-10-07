@@ -17,8 +17,8 @@ namespace FileValidator
 
         public void WriteLine(string text)
         {
-            System.IO.StreamWriter file = new System.IO.StreamWriter(fileLocation);
-            file.WriteLine(text);
+            System.IO.StreamWriter file = new System.IO.StreamWriter(fileLocation, true);
+            file.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm tt") + ": " + text);
 
             file.Close();
         }
