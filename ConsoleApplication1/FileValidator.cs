@@ -21,8 +21,6 @@ namespace FileValidator
             validators = aValidators;
             delimiter = adelimiter;
             logFile = alogFile;
-
-            
         }
 
         public void ValidateFile(string file)
@@ -51,7 +49,7 @@ namespace FileValidator
             catch (Exception e)
             {
                 logFile.WriteLine("The file could not be read: " + file);
-                logFile.WriteLine(e.Message);
+                logFile. WriteLine(e.Message);
             }
         }
  

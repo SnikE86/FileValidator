@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FileValidator
 {
-    class ValidatorNumber : IValidator
+    class NumberValidator : IValidator
     {
         public Boolean ValidateField(string fieldText, string errorText)
         {
