@@ -14,11 +14,15 @@ namespace FileValidator
 
         private LogFile logFile;
 
-        public FileValidator(Dictionary<int, IValidator> aValidators, string errors_file)
+        private string delimiter;
+
+        public FileValidator(Dictionary<int, IValidator> aValidators, string adelimiter, LogFile alogFile)
         {
             validators = aValidators;
+            delimiter = adelimiter;
+            logFile = alogFile;
 
-            logFile = new LogFile(errors_file);
+            
         }
 
         public void ValidateFile(string file)
@@ -53,7 +57,7 @@ namespace FileValidator
  
         private Boolean validateLine(string line, string errorText)
         {
-            string[] fields = line.Split(','); //this could be pipe
+            string[] fields = line.Split(delimiter[0]);
 
             foreach (var pair in validators)
             {
