@@ -19,13 +19,13 @@ namespace FileValidator
 
             ValidatorsProvider validatorsProvider = new ValidatorsProvider();
 
-            LogFile logFile = new LogFile(errors_file);
-
-            if (delimiter.Length == 1)
+            if (System.IO.Directory.Exists(Path.GetDirectoryName(errors_file)))
             {
-                if (System.IO.Directory.Exists(input_folder))
+                LogFile logFile = new LogFile(errors_file);
+
+                if (delimiter.Length == 1)
                 {
-                    if (System.IO.Directory.Exists(Path.GetDirectoryName(errors_file)))
+                    if (System.IO.Directory.Exists(input_folder))
                     {
                         if (file_mask.Length > 0)
                         {
@@ -40,20 +40,21 @@ namespace FileValidator
                         {
                             logFile.WriteLine("file_mask not provided. Check the appconfig is configured correctly.");
                         }
+                    
                     }
                     else
                     {
-                        logFile.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly.");
+                        logFile.WriteLine("input_folder does not exist. Check the appconfig is configured correctly.");
                     }
                 }
                 else
                 {
-                    logFile.WriteLine("input_folder does not exist. Check the appconfig is configured correctly.");
+                    logFile.WriteLine("Delimiter can only be one character. Check the appconfig is configured correctly.");
                 }
-            }
+                }
             else
             {
-                logFile.WriteLine("Delimiter can only be one character. Check the appconfig is configured correctly.");
+                Console.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly.");
             }
         }
     }

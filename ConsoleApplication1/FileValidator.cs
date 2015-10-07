@@ -10,13 +10,13 @@ namespace FileValidator
 {
     class FileValidator
     {
-        private Dictionary<int, IValidator> validators;  //ColumnIndex, Validator
+        private Dictionary<int, List<IValidator>> validators;  //ColumnIndex, list of Validator
 
         private LogFile logFile;
 
         private string delimiter;
 
-        public FileValidator(Dictionary<int, IValidator> aValidators, string adelimiter, LogFile alogFile)
+        public FileValidator(Dictionary<int, List<IValidator>> aValidators, string adelimiter, LogFile alogFile)
         {
             validators = aValidators;
             delimiter = adelimiter;
@@ -63,11 +63,14 @@ namespace FileValidator
             {
                 string field = fields[pair.Key];
 
-                IValidator validator = pair.Value;
+                List<IValidator> validatorList = pair.Value;
 
-                if (!validator.ValidateField(field, errorText))
+                foreach (IValidator validator in validatorList)
                 {
-                    return false;
+                    if (!validator.ValidateField(field, errorText))
+                    {
+                        return false;
+                    }
                 }
             }
             return true;
