@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ValidatorMaxFieldLength.cs" />
     <Compile Include="ValidatorDate_YYYYMMDD.cs" />
     <Compile Include="ValidatorDate_YYMMDD.cs" />
     <Compile Include="FileValidator.cs" />

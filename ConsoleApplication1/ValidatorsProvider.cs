@@ -51,6 +51,16 @@ namespace FileValidator
                     validator = new ValidatorFieldLength(fieldLength);
                 }
 
+                if (value.Contains("ValidatorMaxFieldLength"))
+                {
+                    string[] parts = value.Split('_');
+
+                    int maxFieldLength = Int32.Parse(parts[1].ToString());
+
+                    validator = new ValidatorMaxFieldLength(maxFieldLength);
+                }
+
+
                 if (validator != null)
                 {
 
