@@ -67,6 +67,8 @@ namespace FileValidator
                 {
                     if (!validator.ValidateField(field, out errorText))
                     {
+                        errorText = "in field " + pair.Key.ToString() + ": " + errorText;
+
                         return false;
                     }
                 }
