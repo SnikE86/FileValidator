@@ -8,7 +8,7 @@ namespace FileValidatorUnitTests
     public class Test_ValidatorMaxFieldLength
     {
         [TestMethod]
-        public void Test_FieldIs5_Pass()
+        public void Test_FieldIs5_PassWhenSameLength()
         {
             ValidatorMaxFieldLength validator = new ValidatorMaxFieldLength(5);
 
@@ -34,7 +34,7 @@ namespace FileValidatorUnitTests
         }
 
         [TestMethod]
-        public void Test_FieldIs5_TooLong()
+        public void Test_FieldIs5_FailWhenTooLong()
         {
             ValidatorMaxFieldLength validator = new ValidatorMaxFieldLength(5);
 
@@ -47,7 +47,7 @@ namespace FileValidatorUnitTests
         }
 
         [TestMethod]
-        public void Test_FieldIs8_Pass()
+        public void Test_FieldIs8_PassWhenSameLength()
         {
             ValidatorMaxFieldLength validator = new ValidatorMaxFieldLength(8);
 
@@ -73,7 +73,7 @@ namespace FileValidatorUnitTests
         }
 
         [TestMethod]
-        public void Test_FieldIs8_TooLong()
+        public void Test_FieldIs8_FailWhenTooLong()
         {
             ValidatorMaxFieldLength validator = new ValidatorMaxFieldLength(8);
 

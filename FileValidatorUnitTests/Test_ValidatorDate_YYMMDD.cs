@@ -71,5 +71,18 @@ namespace FileValidatorUnitTests
             Assert.IsFalse(result);
             Assert.AreEqual(errorMsg, "Field is not a date: 153007", "errorMsg is: " + errorMsg);
         }
+
+        [TestMethod]
+        public void Test_FieldContainsAlphaChars()
+        {
+            ValidatorDate_YYMMDD validator = new ValidatorDate_YYMMDD();
+
+            string errorMsg;
+
+            bool result = validator.ValidateField("abcdef", out errorMsg);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(errorMsg, "Field is not a date: abcdef", "errorMsg is: " + errorMsg);
+        }
     }
 }
