@@ -16,15 +16,20 @@ namespace FileValidator
 
         private string delimiter;
 
-        public FileValidator(Dictionary<int, List<IValidator>> aValidators, string adelimiter, LogFile alogFile)
+        private CompletedFileHandler completedFileHandler;
+
+        public FileValidator(Dictionary<int, List<IValidator>> aValidators, string adelimiter, LogFile alogFile, CompletedFileHandler acompletedFileHandler)
         {
             validators = aValidators;
             delimiter = adelimiter;
             logFile = alogFile;
+            completedFileHandler = acompletedFileHandler;
         }
 
         public void ValidateFile(string file)
         {
+            bool fileSuccess = true;
+
             try
             {
                 string errorText = ""; //for logFile
@@ -42,8 +47,19 @@ namespace FileValidator
                         if (!validateLine(line, out errorText))
                         {
                             logFile.WriteLine("Error with file: " + file + " on line: " + lineIndex + " " + errorText);
+
+                            fileSuccess = false;
                         }
                     }
+                }
+
+                if (fileSuccess)
+                {
+                    completedFileHandler.MoveFileToSuccessDirectory(file);
+                }
+                else
+                {
+                    completedFileHandler.MoveFileToFailureDirectory(file);
                 }
             }
             catch (Exception e)

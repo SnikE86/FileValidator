@@ -16,6 +16,10 @@ namespace FileValidator
             string file_mask = ConfigurationManager.AppSettings["file_mask"];
             string errors_file = ConfigurationManager.AppSettings["errors_file"];
             string delimiter = ConfigurationManager.AppSettings["delimiter"];
+            string successDirectory = ConfigurationManager.AppSettings["successDirectory"];
+            string failureDirectory = ConfigurationManager.AppSettings["failureDirectory"];
+
+            CompletedFileHandler completedFileHander = new CompletedFileHandler(successDirectory, failureDirectory);
 
             ValidatorsProvider validatorsProvider = new ValidatorsProvider();
 
@@ -29,7 +33,7 @@ namespace FileValidator
                     {
                         if (file_mask.Length > 0)
                         {
-                            FileValidator fileValidator = new FileValidator(validatorsProvider.GetValidators(), delimiter, logFile);
+                            FileValidator fileValidator = new FileValidator(validatorsProvider.GetValidators(), delimiter, logFile, completedFileHander);
 
                             foreach (var file in Directory.EnumerateFiles(input_folder, file_mask))
                             {
@@ -54,8 +58,9 @@ namespace FileValidator
                 }
             else
             {
-                Console.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly.");
+                Console.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly. " + errors_file);
             }
         }
     }
 }
+
