@@ -26,17 +26,20 @@ namespace FileValidator
 
                 switch (value)
                 {
-                    case "DateValidator_YYMMDD":
+                    case "ValidatorDateValidator_YYMMDD":
                         validator = new ValidatorDate_YYMMDD();
                         break;
-                    case "DateValidator_YYYYMMDD":
+                    case "ValidatorDateValidator_YYYYMMDD":
                         validator = new ValidatorDate_YYYYMMDD();
                         break;
-                    case "NumberValidator":
+                    case "ValidatorNumberValidator":
                         validator = new ValidatorNumber();
                         break;
-                    case "NoNumbersValidator":
+                    case "ValidatorNoNumbers":
                         validator = new ValidatorNoNumbers();
+                        break;
+                    case "ValidatorFieldIsNotBlank":
+                        validator = new ValidatorFieldIsNotBlank();
                         break;
                     default: validator = null;
                         break;

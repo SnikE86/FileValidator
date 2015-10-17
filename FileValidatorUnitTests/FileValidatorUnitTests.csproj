@@ -57,6 +57,7 @@
     <Compile Include="Test_ValidatorNoNumbers.cs" />
     <Compile Include="Test_ValidatorNumber.cs" />
     <Compile Include="Test_ValidatorMaxFieldLength.cs" />
+    <Compile Include="Test_ValidatorFieldIsNotBlank.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConsoleApplication1\FileValidator.csproj">

@@ -23,7 +23,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompletedFileHandler.cs" />
+    <Compile Include="ValidatorFieldIsNotBlank.cs" />
     <Compile Include="ValidatorMaxFieldLength.cs" />
     <Compile Include="ValidatorDate_YYYYMMDD.cs" />
     <Compile Include="ValidatorDate_YYMMDD.cs" />
