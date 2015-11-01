@@ -19,46 +19,56 @@ namespace FileValidator
             string successDirectory = ConfigurationManager.AppSettings["successDirectory"];
             string failureDirectory = ConfigurationManager.AppSettings["failureDirectory"];
 
-            CompletedFileHandler completedFileHander = new CompletedFileHandler(successDirectory, failureDirectory);
+            IVersionProvider currentVersionProvider = new CurrentVersionProvider();
+            IVersionProvider serverVersionProvider = new ServerVersionProvider();
+            IUpdateResolver updateResolver = new UpdateResolver();
 
-            ValidatorsProvider validatorsProvider = new ValidatorsProvider();
+            ActiveUpdater activeUpdate = new ActiveUpdater(currentVersionProvider, serverVersionProvider, updateResolver);
 
-            if (System.IO.Directory.Exists(Path.GetDirectoryName(errors_file)))
+            if (activeUpdate.UpdateSuccessful())
             {
-                LogFile logFile = new LogFile(errors_file);
 
-                if (delimiter.Length == 1)
+                CompletedFileHandler completedFileHander = new CompletedFileHandler(successDirectory, failureDirectory);
+
+                ValidatorsProvider validatorsProvider = new ValidatorsProvider();
+
+                if (System.IO.Directory.Exists(Path.GetDirectoryName(errors_file)))
                 {
-                    if (System.IO.Directory.Exists(input_folder))
-                    {
-                        if (file_mask.Length > 0)
-                        {
-                            FileValidator fileValidator = new FileValidator(validatorsProvider.GetValidators(), delimiter, logFile, completedFileHander);
+                    LogFile logFile = new LogFile(errors_file);
 
-                            foreach (var file in Directory.EnumerateFiles(input_folder, file_mask))
+                    if (delimiter.Length == 1)
+                    {
+                        if (System.IO.Directory.Exists(input_folder))
+                        {
+                            if (file_mask.Length > 0)
                             {
-                                fileValidator.ValidateFile(file);
+                                FileValidator fileValidator = new FileValidator(validatorsProvider.GetValidators(), delimiter, logFile, completedFileHander);
+
+                                foreach (var file in Directory.EnumerateFiles(input_folder, file_mask))
+                                {
+                                    fileValidator.ValidateFile(file);
+                                }
                             }
+                            else
+                            {
+                                logFile.WriteLine("file_mask not provided. Check the appconfig is configured correctly.");
+                            }
+
                         }
                         else
                         {
-                            logFile.WriteLine("file_mask not provided. Check the appconfig is configured correctly.");
+                            logFile.WriteLine("input_folder does not exist. Check the appconfig is configured correctly.");
                         }
-                    
                     }
                     else
                     {
-                        logFile.WriteLine("input_folder does not exist. Check the appconfig is configured correctly.");
+                        logFile.WriteLine("Delimiter can only be one character. Check the appconfig is configured correctly.");
                     }
                 }
                 else
                 {
-                    logFile.WriteLine("Delimiter can only be one character. Check the appconfig is configured correctly.");
+                    Console.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly. " + errors_file);
                 }
-                }
-            else
-            {
-                Console.WriteLine("errors_file folder path does not exist. Check the appconfig is configured correctly. " + errors_file);
             }
         }
     }

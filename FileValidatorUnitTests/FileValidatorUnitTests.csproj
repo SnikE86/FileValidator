@@ -50,6 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FakeUpdateResolver.cs" />
+    <Compile Include="FakeVersionProvider.cs" />
     <Compile Include="Test_ValidatorDate_YYMMDD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test_ValidatorDate_YYYYMMDD.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="Test_ValidatorNumber.cs" />
     <Compile Include="Test_ValidatorMaxFieldLength.cs" />
     <Compile Include="Test_ValidatorFieldIsNotBlank.cs" />
+    <Compile Include="Test_ActiveUpdate.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConsoleApplication1\FileValidator.csproj">
