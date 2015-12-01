@@ -32,6 +32,9 @@ namespace FileValidator
                     case "ValidatorDateValidator_YYYYMMDD":
                         validator = new ValidatorDate_YYYYMMDD();
                         break;
+                    case "ValidatorDateValidator_MMDDYYYY":
+                        validator = new ValidatorDate_MMDDYYYY();
+                        break;
                     case "ValidatorNumberValidator":
                         validator = new ValidatorNumber();
                         break;
@@ -40,6 +43,9 @@ namespace FileValidator
                         break;
                     case "ValidatorFieldIsNotBlank":
                         validator = new ValidatorFieldIsNotBlank();
+                        break;
+                    case "ValidatorCurrency":
+                        validator = new ValidatorCurrency();
                         break;
                     default: validator = null;
                         break;

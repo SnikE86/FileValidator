@@ -83,6 +83,8 @@
     <Compile Include="IVersionProvider.cs" />
     <Compile Include="ServerVersionProvider.cs" />
     <Compile Include="UpdateResolver.cs" />
+    <Compile Include="ValidatorCurrency.cs" />
+    <Compile Include="ValidatorDate_MMDDYYYY.cs" />
     <Compile Include="ValidatorFieldIsNotBlank.cs" />
     <Compile Include="ValidatorMaxFieldLength.cs" />
     <Compile Include="ValidatorDate_YYYYMMDD.cs" />
