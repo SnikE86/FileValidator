@@ -10,9 +10,13 @@ namespace FileValidatorIntegrationTests
     {
         static void Main(string[] args)
         {
-            TestSetup testSetup = new TestSetup();
+            FileCreator fileCreator = new FileCreator();
 
-            TestExecutor testExecutor = new TestExecutor(testSetup);
+            TestSetup testSetup = new TestSetup(fileCreator);
+
+            MainForm mainForm = new MainForm();
+
+            TestExecutor testExecutor = new TestExecutor(testSetup, fileCreator, mainForm);
 
             testExecutor.Execute();
         }
