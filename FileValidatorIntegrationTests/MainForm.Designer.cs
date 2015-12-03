@@ -53,7 +53,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(488, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1022, 443);
             this.dataGridView1.TabIndex = 0;
             // 
             // testResultBindingSource
@@ -62,10 +62,12 @@
             // 
             // testNameDataGridViewTextBoxColumn
             // 
+            this.testNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.testNameDataGridViewTextBoxColumn.DataPropertyName = "testName";
             this.testNameDataGridViewTextBoxColumn.HeaderText = "testName";
             this.testNameDataGridViewTextBoxColumn.Name = "testNameDataGridViewTextBoxColumn";
             this.testNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.testNameDataGridViewTextBoxColumn.Width = 77;
             // 
             // testPassedDataGridViewCheckBoxColumn
             // 
@@ -73,19 +75,22 @@
             this.testPassedDataGridViewCheckBoxColumn.HeaderText = "testPassed";
             this.testPassedDataGridViewCheckBoxColumn.Name = "testPassedDataGridViewCheckBoxColumn";
             this.testPassedDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.testPassedDataGridViewCheckBoxColumn.Width = 25;
             // 
             // errorMessageDataGridViewTextBoxColumn
             // 
+            this.errorMessageDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.errorMessageDataGridViewTextBoxColumn.DataPropertyName = "errorMessage";
             this.errorMessageDataGridViewTextBoxColumn.HeaderText = "errorMessage";
             this.errorMessageDataGridViewTextBoxColumn.Name = "errorMessageDataGridViewTextBoxColumn";
             this.errorMessageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.errorMessageDataGridViewTextBoxColumn.Width = 96;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 366);
+            this.ClientSize = new System.Drawing.Size(1022, 443);
             this.Controls.Add(this.dataGridView1);
             this.Name = "MainForm";
             this.Text = "File Validator Integration Tests";
@@ -98,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource testResultBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn testNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn testPassedDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn errorMessageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource testResultBindingSource;
     }
 }

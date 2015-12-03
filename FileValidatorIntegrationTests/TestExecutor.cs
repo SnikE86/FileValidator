@@ -75,12 +75,19 @@ namespace FileValidatorIntegrationTests
             else
             { 
                 testResult.testPassed = false;
-
+                testResult.errorMessage = GetErrorMsg(tempDirectory);
             }
 
             _mainForm.AddTestResult(testResult);
 
             Directory.Delete(tempDirectory, true);
+        }
+
+
+        private string GetErrorMsg(string tempDirectory)
+        {
+            string fileName = Path.Combine(tempDirectory, "Output", "results.log");
+            return File.ReadLines(fileName).Last();
         }
     }
 }

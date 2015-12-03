@@ -72,7 +72,7 @@ namespace FileValidatorIntegrationTests
             _fileCreator.AddLine("<add key=\"input_folder\" value=\"" + Path.Combine(tempPath, "Input") + "\" />");
             _fileCreator.AddLine("<add key=\"file_mask\" value=\"*.csv\" />");
             _fileCreator.AddLine("<add key=\"errors_file\" value=\"" + Path.Combine(tempPath, "Output", "results.log") + "\" />");
-            _fileCreator.AddLine("<add key=\"delimiter\" value=\"|\" />");
+            _fileCreator.AddLine("<add key=\"delimiter\" value=\",\" />");
             _fileCreator.AddLine("<add key=\"successDirectory\" value=\"" + Path.Combine(tempPath, "Success") + "\" />");
             _fileCreator.AddLine("<add key=\"failureDirectory\" value=\"" + Path.Combine(tempPath, "Failure") + "\" />");
             _fileCreator.AddLine("<add key=\"ClientSettingsProvider.ServiceUri\" value=\"\" />");
