@@ -9,21 +9,11 @@ namespace FileValidatorIntegrationTests
 {
     class FileCreator
     {
-        System.IO.StreamWriter file;
-        string _filename;
+       string _filename;
 
         public void SetupFile(string filename)
         {
             _filename = filename;
-            //if (File.Exists(filePath))
-            //{
-            //    File.Delete(filePath);
-            //}
-
-            //File.Create(filePath);
-            //File.
-            ////config must contain all validators
-            //file = new System.IO.StreamWriter(filePath);
         }
 
         public void AddLine(string line)
@@ -32,11 +22,6 @@ namespace FileValidatorIntegrationTests
             {
                 sw.WriteLine(line);
             }
-        }
-
-        public void CloseFile()
-        {
-            //file.Close();
         }
     }
 }

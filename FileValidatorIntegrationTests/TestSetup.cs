@@ -101,8 +101,6 @@ namespace FileValidatorIntegrationTests
             _fileCreator.AddLine("</roleManager>");
             _fileCreator.AddLine("</system.web>");
             _fileCreator.AddLine("</configuration>");
-
-            _fileCreator.CloseFile();
         }
 
         private string GetConfigFilePath()

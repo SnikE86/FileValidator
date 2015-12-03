@@ -24,6 +24,7 @@ namespace FileValidatorIntegrationTests
         public void Execute()
         {
             ExecuteValidatorsAllPassTest();
+            ExecuteValidatorsFailOnCurrencyValidator();
 
             _mainForm.ShowDialog();
         }
@@ -61,7 +62,6 @@ namespace FileValidatorIntegrationTests
 
             _fileCreator.SetupFile(Path.Combine(tempDirectory, "Input", "TestInputFile.csv"));
             _fileCreator.AddLine("99.99,12022015,151202,20151202,1,1010101010,12345,abc,123");
-            _fileCreator.CloseFile();
 
             ExecuteFileValidator();
 
@@ -74,6 +74,45 @@ namespace FileValidatorIntegrationTests
             }
             else
             { 
+                testResult.testPassed = false;
+                testResult.errorMessage = GetErrorMsg(tempDirectory);
+            }
+
+            _mainForm.AddTestResult(testResult);
+
+            Directory.Delete(tempDirectory, true);
+        }
+
+        private void ExecuteValidatorsFailOnCurrencyValidator()
+        {
+            string tempDirectory = _testSetup.SetupAndReturnTempDirectory();
+
+            TestResult testResult = new TestResult();
+
+            testResult.testName = "ExecuteValidatorsFailOnCurrencyValidator";
+
+            _fileCreator.SetupFile(Path.Combine(tempDirectory, "Input", "TestInputFile.csv"));
+            _fileCreator.AddLine("FAIL_HERE,12022015,151202,20151202,1,1010101010,12345,abc,123");
+
+            ExecuteFileValidator();
+
+            if (File.Exists(Path.Combine(tempDirectory, "Failure", "TestInputFile.csv"))
+                && (!File.Exists(Path.Combine(tempDirectory, "Input", "TestInputFile.csv")))
+                && (!File.Exists(Path.Combine(tempDirectory, "Success", "TestInputFile.csv")))
+                && (File.Exists(Path.Combine(tempDirectory, "Output", "results.log"))))
+            {
+                if(GetErrorMsg(tempDirectory).Contains("Field is not a currency (expected format: dd.dd): "))
+                {
+                    testResult.testPassed = true;
+                }
+                else
+                {
+                    testResult.testPassed = false;
+                    testResult.errorMessage = GetErrorMsg(tempDirectory);
+                }
+            }
+            else
+            {
                 testResult.testPassed = false;
                 testResult.errorMessage = GetErrorMsg(tempDirectory);
             }
