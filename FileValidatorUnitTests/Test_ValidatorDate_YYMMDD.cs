@@ -30,7 +30,7 @@ namespace FileValidatorUnitTests
             bool result = validator.ValidateField("15100", out errorMsg);
 
             Assert.IsFalse(result);
-            Assert.AreEqual(errorMsg, "Field is not correct length (expected 6): 15100", "errorMsg is: " + errorMsg);
+            Assert.AreEqual(errorMsg, "Field is not correct format (YYMMDD): 15100", "errorMsg is: " + errorMsg);
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace FileValidatorUnitTests
             bool result = validator.ValidateField("1510070", out errorMsg);
 
             Assert.IsFalse(result);
-            Assert.AreEqual(errorMsg, "Field is not correct length (expected 6): 1510070", "errorMsg is: " + errorMsg);
+            Assert.AreEqual(errorMsg, "Field is not correct format (YYMMDD): 1510070", "errorMsg is: " + errorMsg);
         }
 
         [TestMethod]

@@ -83,7 +83,7 @@ namespace FileValidator
             }
             else
             {
-                errorText = "Field is not correct length (expected 8): " + fieldText;
+                errorText = "Field is not correct format (YYYYMMDD): " + fieldText;
                 return false;
             }
         }

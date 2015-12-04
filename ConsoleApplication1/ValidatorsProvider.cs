@@ -35,7 +35,7 @@ namespace FileValidator
                     case "ValidatorDateValidator_MMDDYYYY":
                         validator = new ValidatorDate_MMDDYYYY();
                         break;
-                    case "ValidatorNumberValidator":
+                    case "ValidatorNumber":
                         validator = new ValidatorNumber();
                         break;
                     case "ValidatorNoNumbers":

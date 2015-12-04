@@ -79,9 +79,9 @@ namespace FileValidatorIntegrationTests
             _fileCreator.AddLine("</appSettings>");
             _fileCreator.AddLine("<validators>");
             _fileCreator.AddLine("<add key=\"0\" value=\"ValidatorCurrency\" />");
-            _fileCreator.AddLine("<add key=\"1\" value=\"ValidatorDate_MMDDYYYY\" />");
-            _fileCreator.AddLine("<add key=\"2\" value=\"ValidatorDate_YYMMDD\" />");
-            _fileCreator.AddLine("<add key=\"3\" value=\"ValidatorDate_YYYYMMDD\" />");
+            _fileCreator.AddLine("<add key=\"1\" value=\"ValidatorDateValidator_MMDDYYYY\" />");
+            _fileCreator.AddLine("<add key=\"2\" value=\"ValidatorDateValidator_YYMMDD\" />");
+            _fileCreator.AddLine("<add key=\"3\" value=\"ValidatorDateValidator_YYYYMMDD\" />");
             _fileCreator.AddLine("<add key=\"4\" value=\"ValidatorFieldIsNotBlank\" />");
             _fileCreator.AddLine("<add key=\"5\" value=\"ValidatorFieldLength_10\" />");
             _fileCreator.AddLine("<add key=\"6\" value=\"ValidatorMaxFieldLength_5\" />");
