@@ -23,6 +23,10 @@ namespace FileValidator
             IVersionProvider serverVersionProvider = new ServerVersionProvider();
             IUpdateResolver updateResolver = new UpdateResolver();
 
+            ApplicationStats appStats = new ApplicationStats();
+
+            appStats.ApplicationLaunched();
+
             ActiveUpdater activeUpdate = new ActiveUpdater(currentVersionProvider, serverVersionProvider, updateResolver);
 
             if (activeUpdate.UpdateSuccessful())

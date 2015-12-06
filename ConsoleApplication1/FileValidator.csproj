@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveUpdater.cs" />
+    <Compile Include="ApplicationStats.cs" />
     <Compile Include="CompletedFileHandler.cs" />
     <Compile Include="CurrentVersionProvider.cs" />
     <Compile Include="IUpdateResolver.cs" />
