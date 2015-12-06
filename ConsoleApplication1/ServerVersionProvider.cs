@@ -13,7 +13,7 @@ namespace FileValidator
     {
         public string GetVersion()
         {
-            HttpWebRequest request = WebRequest.Create("http://michaelekins.co.uk/ApplicationVersions/FileValidatorVersion.php") as HttpWebRequest;
+            HttpWebRequest request = WebRequest.Create("http://michaelekins.co.uk/ApplicationVersions/GetCurrentVersion.php?appName=FileValidator") as HttpWebRequest;
 
             request.Method = "GET";
 
