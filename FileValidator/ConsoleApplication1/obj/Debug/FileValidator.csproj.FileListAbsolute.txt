@@ -1,0 +1,10 @@
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\bin\Debug\FileValidator.exe.config
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\bin\Debug\FileValidator.exe.manifest
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\bin\Debug\FileValidator.application
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\bin\Debug\FileValidator.exe
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\bin\Debug\FileValidator.pdb
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\obj\Debug\FileValidator.csprojResolveAssemblyReference.cache
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\obj\Debug\FileValidator.exe.manifest
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\obj\Debug\FileValidator.application
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\obj\Debug\FileValidator.exe
+C:\Source\Trunk\Tools\FileValidator\ConsoleApplication1\obj\Debug\FileValidator.pdb

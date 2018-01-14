@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d6fa2ac7-c7bf-4f24-8cdf-9a88c7a9b3f0" name="Laptop01@DESKTOP-HUE9FNP 2016-05-04 21:04:38" runUser="DESKTOP-HUE9FNP\Laptop01" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="8328d4d7-250c-45b8-b27e-64a16a651ae1">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Laptop01_DESKTOP-HUE9FNP 2016-05-04 21_04_38" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2016-05-04T21:04:38.1307270+01:00" queuing="2016-05-04T21:04:38.5496236+01:00" start="2016-05-04T21:04:38.6682824+01:00" finish="2016-05-04T21:04:39.3356691+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="35" executed="35" passed="31" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_FieldIsMixed" storage="filevalidatorunittests.dll" id="86bee6bf-57a6-004e-abe1-1acd57d604d5">
+      <Execution id="29b7137c-978a-42e1-b6fa-4daf67c8d718" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNumber, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsMixed" />
+    </UnitTest>
+    <UnitTest name="CurrentVersionIsSameAsServerVersion" storage="filevalidatorunittests.dll" id="cde506d8-fcc0-3d39-7f5f-1c8c19cfd2b3">
+      <TestCategory>
+        <TestCategoryItem TestCategory="AllTests" />
+      </TestCategory>
+      <Execution id="6e106e25-ae3d-4a81-bcc1-6ab00151d54b" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ActiveUpdate, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CurrentVersionIsSameAsServerVersion" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_TooShort" storage="filevalidatorunittests.dll" id="a38c91dd-fc48-8e16-d863-c9f80157d5be">
+      <Execution id="81d7d797-ccf5-4772-88aa-8de57902add2" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_TooShort" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsNumeric" storage="filevalidatorunittests.dll" id="f214cb25-b452-b491-308e-0e3c16494471">
+      <Execution id="fd1cd8f3-6952-407b-bf9c-d16fb40419b8" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNoNumbers, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsNumeric" />
+    </UnitTest>
+    <UnitTest name="Test_MonthIsInvalid" storage="filevalidatorunittests.dll" id="f3e16987-29d8-79e2-5da3-8d1eeedfd3b8">
+      <Execution id="27afbb8e-e601-4a43-bc35-4e17677c8c98" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_MonthIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsTooLong" storage="filevalidatorunittests.dll" id="e2dca528-d74f-7572-458e-b13daae9726b">
+      <Execution id="507907a5-6467-4364-8d39-7e5350305e3a" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsTooLong" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsTooShort" storage="filevalidatorunittests.dll" id="69698c9c-62c2-e281-6699-86cf6498fccf">
+      <Execution id="33cafc67-a937-49b6-abd8-ccaf886c4c67" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsTooShort" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsTooLong" storage="filevalidatorunittests.dll" id="71ed0db5-3580-3898-5e53-24a7c03f6b64">
+      <Execution id="453ea13c-01cb-499a-9094-563a8e9be2cf" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsTooLong" />
+    </UnitTest>
+    <UnitTest name="Test_DayIsInvalid" storage="filevalidatorunittests.dll" id="ae157332-dbd0-4695-d9ae-06d3d190c9bb">
+      <Execution id="347de560-be41-4425-988d-94f5c67424b3" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_DayIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_PassWhenShorter" storage="filevalidatorunittests.dll" id="fd25fb28-ab9a-a68e-ae44-fbd4f6a278ea">
+      <Execution id="10d21be1-8e2f-4825-b92a-0aa40c82dab8" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_PassWhenShorter" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_TooLong" storage="filevalidatorunittests.dll" id="7cebfcf5-9113-a625-8bc1-75fa975b0c37">
+      <Execution id="83668d08-441f-46b1-b25c-a35b4c86358c" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_TooLong" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsYYYYMMDD" storage="filevalidatorunittests.dll" id="fdb0fa56-4e2d-5f49-9c3b-ecb5855b0f02">
+      <Execution id="a9184c25-56fe-41b7-997d-0737df00b73d" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsYYYYMMDD" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_FailWhenTooLong" storage="filevalidatorunittests.dll" id="7fc93b62-b53f-eac1-7719-6e706235aa82">
+      <Execution id="211d7573-5896-4842-a93f-3020f6b9dfbb" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_FailWhenTooLong" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsMixed" storage="filevalidatorunittests.dll" id="a53b8ab0-be54-cc44-c216-ec0bf1a83ff0">
+      <Execution id="42236d64-ad23-486e-af81-7ea06dc8a8ea" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNoNumbers, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsMixed" />
+    </UnitTest>
+    <UnitTest name="FailWhenFieldIsBlank" storage="filevalidatorunittests.dll" id="9bf8d9d2-3413-0256-acb0-b8d59510e783">
+      <Execution id="97b1d2e0-7deb-403f-bbda-30a692d876bd" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldIsNotBlank, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FailWhenFieldIsBlank" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_Pass" storage="filevalidatorunittests.dll" id="61b47501-8e10-0506-667e-33cbb3e2a9ce">
+      <Execution id="57d7a924-fca5-45da-9b73-a667a214763d" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_Pass" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_FailWhenTooLong" storage="filevalidatorunittests.dll" id="d3e93d43-5ec9-98ce-11e0-7a516d9f2589">
+      <Execution id="ea5723a3-4883-4bb2-a45a-74fd551f2830" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_FailWhenTooLong" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_PassWhenShorter" storage="filevalidatorunittests.dll" id="053a1c73-1ac9-87b8-485f-894f65a98807">
+      <Execution id="146ce746-f6e7-44a7-9510-3b9f0f22ad22" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_PassWhenShorter" />
+    </UnitTest>
+    <UnitTest name="Test_DayIsInvalid" storage="filevalidatorunittests.dll" id="00f9acc7-e1a2-4326-e1f5-a86e4324a652">
+      <Execution id="9c841039-06fa-4132-aac1-24d106aae79e" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_DayIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Test_FieldContainsAlphaChars" storage="filevalidatorunittests.dll" id="030c89dc-488f-9ecc-4c02-2025bd0d50cc">
+      <Execution id="99ff5bcb-bd1a-4134-873b-c3d054438178" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldContainsAlphaChars" />
+    </UnitTest>
+    <UnitTest name="PassWhenFieldIsNotBlank" storage="filevalidatorunittests.dll" id="0fdbc006-6ea6-764c-9fe3-c5fb757d5156">
+      <Execution id="d92574cd-4f7d-4da9-bee9-48e7c52dd1b8" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldIsNotBlank, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PassWhenFieldIsNotBlank" />
+    </UnitTest>
+    <UnitTest name="CurrentVersionIsHigherThanServerVersion" storage="filevalidatorunittests.dll" id="979d5c43-c960-ef13-3218-9565fe77dd36">
+      <TestCategory>
+        <TestCategoryItem TestCategory="AllTests" />
+      </TestCategory>
+      <Execution id="5bf7cf4a-f886-4a47-8285-00101963a288" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ActiveUpdate, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CurrentVersionIsHigherThanServerVersion" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsNotNumeric" storage="filevalidatorunittests.dll" id="a005b1d0-26ec-bcfa-7cc2-f936d096be6f">
+      <Execution id="0e6c2c1c-54df-4b52-b632-719eaa9c7d83" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNoNumbers, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsNotNumeric" />
+    </UnitTest>
+    <UnitTest name="CurrentVersionIsLowerThanServerVersion_UpdateRequested" storage="filevalidatorunittests.dll" id="7366fb3d-303e-70e1-5f0c-9a34b3aaae94">
+      <TestCategory>
+        <TestCategoryItem TestCategory="AllTests" />
+      </TestCategory>
+      <Execution id="eba3ecf3-1b04-496a-83c8-336c87daa0e7" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ActiveUpdate, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CurrentVersionIsLowerThanServerVersion_UpdateRequested" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_TooLong" storage="filevalidatorunittests.dll" id="79f3a685-fef9-afaa-da15-6223f79b7ee9">
+      <Execution id="9e7f8221-5614-4bdf-9123-b6afce00ac30" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_TooLong" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsNumeric" storage="filevalidatorunittests.dll" id="baa47a15-4d80-c7f2-322e-3aca25591a25">
+      <Execution id="0d0cac7e-e3ee-4541-93bd-ad48581e2f2c" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNumber, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsNumeric" />
+    </UnitTest>
+    <UnitTest name="Test_MonthIsInvalid" storage="filevalidatorunittests.dll" id="f582532f-760c-15f3-ba31-9cc67575470b">
+      <Execution id="2908005b-c755-4302-8046-d7577eefacd8" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_MonthIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsNotNumeric" storage="filevalidatorunittests.dll" id="4cc23d71-e883-e00b-a60b-e0e792a57372">
+      <Execution id="086e399e-7023-43ba-b9ed-e3b4d6bd8997" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorNumber, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsNotNumeric" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_TooShort" storage="filevalidatorunittests.dll" id="87e85511-7c37-970e-29a0-3062bde22139">
+      <Execution id="e3c29c6e-83bb-41f7-910d-6decfb3b11fc" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_TooShort" />
+    </UnitTest>
+    <UnitTest name="Test_FieldContainsAlphaChars" storage="filevalidatorunittests.dll" id="86c6c7ac-b2d3-fe40-425c-497237ca94d5">
+      <Execution id="bc8c6559-be75-446d-854f-181e06b136be" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldContainsAlphaChars" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs8_PassWhenSameLength" storage="filevalidatorunittests.dll" id="3f65da99-a366-92bf-c1b4-b9a8ecb5b8e0">
+      <Execution id="ddbbd4b6-1afe-4f04-8365-7f51afef05c9" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs8_PassWhenSameLength" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsTooShort" storage="filevalidatorunittests.dll" id="08330dae-e518-ffa3-e337-7c970396bcf9">
+      <Execution id="ddcb6022-7f96-4c62-b574-2642f5595d00" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsTooShort" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_PassWhenSameLength" storage="filevalidatorunittests.dll" id="7e543321-f9e6-f7ee-f724-de13e02a1e05">
+      <Execution id="caea9b9f-3033-4e43-9fb3-0ad32670787d" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorMaxFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_PassWhenSameLength" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIsYYMMDD" storage="filevalidatorunittests.dll" id="0aa456e7-cf6d-0b07-b6be-655af652021b">
+      <Execution id="52151129-a6dc-456d-bcf5-c6f7fdc0d5c1" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorDate_YYMMDD, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIsYYMMDD" />
+    </UnitTest>
+    <UnitTest name="Test_FieldIs5_Pass" storage="filevalidatorunittests.dll" id="a57df7f1-5eb9-d98b-74a7-7faa9c7a5a79">
+      <Execution id="b2f861dc-1133-4941-a716-1c0b56c30a6c" />
+      <TestMethod codeBase="C:/Source/Trunk/Tools/FileValidator/FileValidatorUnitTests/bin/Release/FileValidatorUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FileValidatorUnitTests.Test_ValidatorFieldLength, FileValidatorUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FieldIs5_Pass" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="979d5c43-c960-ef13-3218-9565fe77dd36" executionId="5bf7cf4a-f886-4a47-8285-00101963a288" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7366fb3d-303e-70e1-5f0c-9a34b3aaae94" executionId="eba3ecf3-1b04-496a-83c8-336c87daa0e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cde506d8-fcc0-3d39-7f5f-1c8c19cfd2b3" executionId="6e106e25-ae3d-4a81-bcc1-6ab00151d54b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae157332-dbd0-4695-d9ae-06d3d190c9bb" executionId="347de560-be41-4425-988d-94f5c67424b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="030c89dc-488f-9ecc-4c02-2025bd0d50cc" executionId="99ff5bcb-bd1a-4134-873b-c3d054438178" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71ed0db5-3580-3898-5e53-24a7c03f6b64" executionId="453ea13c-01cb-499a-9094-563a8e9be2cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69698c9c-62c2-e281-6699-86cf6498fccf" executionId="33cafc67-a937-49b6-abd8-ccaf886c4c67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0aa456e7-cf6d-0b07-b6be-655af652021b" executionId="52151129-a6dc-456d-bcf5-c6f7fdc0d5c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f582532f-760c-15f3-ba31-9cc67575470b" executionId="2908005b-c755-4302-8046-d7577eefacd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="00f9acc7-e1a2-4326-e1f5-a86e4324a652" executionId="9c841039-06fa-4132-aac1-24d106aae79e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86c6c7ac-b2d3-fe40-425c-497237ca94d5" executionId="bc8c6559-be75-446d-854f-181e06b136be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2dca528-d74f-7572-458e-b13daae9726b" executionId="507907a5-6467-4364-8d39-7e5350305e3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08330dae-e518-ffa3-e337-7c970396bcf9" executionId="ddcb6022-7f96-4c62-b574-2642f5595d00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdb0fa56-4e2d-5f49-9c3b-ecb5855b0f02" executionId="a9184c25-56fe-41b7-997d-0737df00b73d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3e16987-29d8-79e2-5da3-8d1eeedfd3b8" executionId="27afbb8e-e601-4a43-bc35-4e17677c8c98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bf8d9d2-3413-0256-acb0-b8d59510e783" executionId="97b1d2e0-7deb-403f-bbda-30a692d876bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0fdbc006-6ea6-764c-9fe3-c5fb757d5156" executionId="d92574cd-4f7d-4da9-bee9-48e7c52dd1b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a57df7f1-5eb9-d98b-74a7-7faa9c7a5a79" executionId="b2f861dc-1133-4941-a716-1c0b56c30a6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79f3a685-fef9-afaa-da15-6223f79b7ee9" executionId="9e7f8221-5614-4bdf-9123-b6afce00ac30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87e85511-7c37-970e-29a0-3062bde22139" executionId="e3c29c6e-83bb-41f7-910d-6decfb3b11fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61b47501-8e10-0506-667e-33cbb3e2a9ce" executionId="57d7a924-fca5-45da-9b73-a667a214763d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cebfcf5-9113-a625-8bc1-75fa975b0c37" executionId="83668d08-441f-46b1-b25c-a35b4c86358c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a38c91dd-fc48-8e16-d863-c9f80157d5be" executionId="81d7d797-ccf5-4772-88aa-8de57902add2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3e93d43-5ec9-98ce-11e0-7a516d9f2589" executionId="ea5723a3-4883-4bb2-a45a-74fd551f2830" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e543321-f9e6-f7ee-f724-de13e02a1e05" executionId="caea9b9f-3033-4e43-9fb3-0ad32670787d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="053a1c73-1ac9-87b8-485f-894f65a98807" executionId="146ce746-f6e7-44a7-9510-3b9f0f22ad22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fc93b62-b53f-eac1-7719-6e706235aa82" executionId="211d7573-5896-4842-a93f-3020f6b9dfbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f65da99-a366-92bf-c1b4-b9a8ecb5b8e0" executionId="ddbbd4b6-1afe-4f04-8365-7f51afef05c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd25fb28-ab9a-a68e-ae44-fbd4f6a278ea" executionId="10d21be1-8e2f-4825-b92a-0aa40c82dab8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a53b8ab0-be54-cc44-c216-ec0bf1a83ff0" executionId="42236d64-ad23-486e-af81-7ea06dc8a8ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a005b1d0-26ec-bcfa-7cc2-f936d096be6f" executionId="0e6c2c1c-54df-4b52-b632-719eaa9c7d83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f214cb25-b452-b491-308e-0e3c16494471" executionId="fd1cd8f3-6952-407b-bf9c-d16fb40419b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86bee6bf-57a6-004e-abe1-1acd57d604d5" executionId="29b7137c-978a-42e1-b6fa-4daf67c8d718" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4cc23d71-e883-e00b-a60b-e0e792a57372" executionId="086e399e-7023-43ba-b9ed-e3b4d6bd8997" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="baa47a15-4d80-c7f2-322e-3aca25591a25" executionId="0d0cac7e-e3ee-4541-93bd-ad48581e2f2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5bf7cf4a-f886-4a47-8285-00101963a288" testId="979d5c43-c960-ef13-3218-9565fe77dd36" testName="CurrentVersionIsHigherThanServerVersion" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0113909" startTime="2016-05-04T21:04:38.7298983+01:00" endTime="2016-05-04T21:04:39.0196355+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bf7cf4a-f886-4a47-8285-00101963a288">
+    </UnitTestResult>
+    <UnitTestResult executionId="eba3ecf3-1b04-496a-83c8-336c87daa0e7" testId="7366fb3d-303e-70e1-5f0c-9a34b3aaae94" testName="CurrentVersionIsLowerThanServerVersion_UpdateRequested" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004943" startTime="2016-05-04T21:04:39.0246394+01:00" endTime="2016-05-04T21:04:39.0266409+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eba3ecf3-1b04-496a-83c8-336c87daa0e7">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e106e25-ae3d-4a81-bcc1-6ab00151d54b" testId="cde506d8-fcc0-3d39-7f5f-1c8c19cfd2b3" testName="CurrentVersionIsSameAsServerVersion" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003810" startTime="2016-05-04T21:04:39.0316444+01:00" endTime="2016-05-04T21:04:39.0336462+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e106e25-ae3d-4a81-bcc1-6ab00151d54b">
+    </UnitTestResult>
+    <UnitTestResult executionId="347de560-be41-4425-988d-94f5c67424b3" testId="ae157332-dbd0-4695-d9ae-06d3d190c9bb" testName="Test_DayIsInvalid" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0006671" startTime="2016-05-04T21:04:39.0376487+01:00" endTime="2016-05-04T21:04:39.0396496+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="347de560-be41-4425-988d-94f5c67424b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="99ff5bcb-bd1a-4134-873b-c3d054438178" testId="030c89dc-488f-9ecc-4c02-2025bd0d50cc" testName="Test_FieldContainsAlphaChars" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002801" startTime="2016-05-04T21:04:39.0436525+01:00" endTime="2016-05-04T21:04:39.0456543+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99ff5bcb-bd1a-4134-873b-c3d054438178">
+    </UnitTestResult>
+    <UnitTestResult executionId="453ea13c-01cb-499a-9094-563a8e9be2cf" testId="71ed0db5-3580-3898-5e53-24a7c03f6b64" testName="Test_FieldIsTooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0285407" startTime="2016-05-04T21:04:39.0506579+01:00" endTime="2016-05-04T21:04:39.0809862+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="453ea13c-01cb-499a-9094-563a8e9be2cf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Field is not correct format (YYMMDD): 1510070&gt;. Actual:&lt;Field is not correct length (expected 6): 1510070&gt;. errorMsg is: Field is not correct format (YYMMDD): 1510070</Message>
+          <StackTrace>   at FileValidatorUnitTests.Test_ValidatorDate_YYMMDD.Test_FieldIsTooLong() in C:\Source\Trunk\Tools\FileValidator\FileValidatorUnitTests\Test_ValidatorDate_YYMMDD.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33cafc67-a937-49b6-abd8-ccaf886c4c67" testId="69698c9c-62c2-e281-6699-86cf6498fccf" testName="Test_FieldIsTooShort" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0016481" startTime="2016-05-04T21:04:39.0849916+01:00" endTime="2016-05-04T21:04:39.0884941+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33cafc67-a937-49b6-abd8-ccaf886c4c67">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Field is not correct format (YYMMDD): 15100&gt;. Actual:&lt;Field is not correct length (expected 6): 15100&gt;. errorMsg is: Field is not correct format (YYMMDD): 15100</Message>
+          <StackTrace>   at FileValidatorUnitTests.Test_ValidatorDate_YYMMDD.Test_FieldIsTooShort() in C:\Source\Trunk\Tools\FileValidator\FileValidatorUnitTests\Test_ValidatorDate_YYMMDD.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52151129-a6dc-456d-bcf5-c6f7fdc0d5c1" testId="0aa456e7-cf6d-0b07-b6be-655af652021b" testName="Test_FieldIsYYMMDD" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002493" startTime="2016-05-04T21:04:39.0914966+01:00" endTime="2016-05-04T21:04:39.0934976+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52151129-a6dc-456d-bcf5-c6f7fdc0d5c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="2908005b-c755-4302-8046-d7577eefacd8" testId="f582532f-760c-15f3-ba31-9cc67575470b" testName="Test_MonthIsInvalid" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002467" startTime="2016-05-04T21:04:39.0970009+01:00" endTime="2016-05-04T21:04:39.0995019+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2908005b-c755-4302-8046-d7577eefacd8">
+    </UnitTestResult>
+    <UnitTestResult executionId="9c841039-06fa-4132-aac1-24d106aae79e" testId="00f9acc7-e1a2-4326-e1f5-a86e4324a652" testName="Test_DayIsInvalid" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0006273" startTime="2016-05-04T21:04:39.1025044+01:00" endTime="2016-05-04T21:04:39.1050058+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c841039-06fa-4132-aac1-24d106aae79e">
+    </UnitTestResult>
+    <UnitTestResult executionId="bc8c6559-be75-446d-854f-181e06b136be" testId="86c6c7ac-b2d3-fe40-425c-497237ca94d5" testName="Test_FieldContainsAlphaChars" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002493" startTime="2016-05-04T21:04:39.1085087+01:00" endTime="2016-05-04T21:04:39.1105097+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc8c6559-be75-446d-854f-181e06b136be">
+    </UnitTestResult>
+    <UnitTestResult executionId="507907a5-6467-4364-8d39-7e5350305e3a" testId="e2dca528-d74f-7572-458e-b13daae9726b" testName="Test_FieldIsTooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0017247" startTime="2016-05-04T21:04:39.1145125+01:00" endTime="2016-05-04T21:04:39.1180162+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="507907a5-6467-4364-8d39-7e5350305e3a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Field is not correct format (YYYYMMDD): 201510070&gt;. Actual:&lt;Field is not correct length (expected 8): 201510070&gt;. errorMsg is: Field is not correct format (YYYYMMDD): 201510070</Message>
+          <StackTrace>   at FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD.Test_FieldIsTooLong() in C:\Source\Trunk\Tools\FileValidator\FileValidatorUnitTests\Test_ValidatorDate_YYYYMMDD.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ddcb6022-7f96-4c62-b574-2642f5595d00" testId="08330dae-e518-ffa3-e337-7c970396bcf9" testName="Test_FieldIsTooShort" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0017195" startTime="2016-05-04T21:04:39.1215179+01:00" endTime="2016-05-04T21:04:39.1250208+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddcb6022-7f96-4c62-b574-2642f5595d00">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Field is not correct format (YYYYMMDD): 2015100&gt;. Actual:&lt;Field is not correct length (expected 8): 2015100&gt;. errorMsg is: Field is not correct format (YYYYMMDD): 2015100</Message>
+          <StackTrace>   at FileValidatorUnitTests.Test_ValidatorDate_YYYYMMDD.Test_FieldIsTooShort() in C:\Source\Trunk\Tools\FileValidator\FileValidatorUnitTests\Test_ValidatorDate_YYYYMMDD.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9184c25-56fe-41b7-997d-0737df00b73d" testId="fdb0fa56-4e2d-5f49-9c3b-ecb5855b0f02" testName="Test_FieldIsYYYYMMDD" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003528" startTime="2016-05-04T21:04:39.1295235+01:00" endTime="2016-05-04T21:04:39.1325257+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9184c25-56fe-41b7-997d-0737df00b73d">
+    </UnitTestResult>
+    <UnitTestResult executionId="27afbb8e-e601-4a43-bc35-4e17677c8c98" testId="f3e16987-29d8-79e2-5da3-8d1eeedfd3b8" testName="Test_MonthIsInvalid" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002501" startTime="2016-05-04T21:04:39.1360281+01:00" endTime="2016-05-04T21:04:39.1380300+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27afbb8e-e601-4a43-bc35-4e17677c8c98">
+    </UnitTestResult>
+    <UnitTestResult executionId="97b1d2e0-7deb-403f-bbda-30a692d876bd" testId="9bf8d9d2-3413-0256-acb0-b8d59510e783" testName="FailWhenFieldIsBlank" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004293" startTime="2016-05-04T21:04:39.1415316+01:00" endTime="2016-05-04T21:04:39.1440342+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97b1d2e0-7deb-403f-bbda-30a692d876bd">
+    </UnitTestResult>
+    <UnitTestResult executionId="d92574cd-4f7d-4da9-bee9-48e7c52dd1b8" testId="0fdbc006-6ea6-764c-9fe3-c5fb757d5156" testName="PassWhenFieldIsNotBlank" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002719" startTime="2016-05-04T21:04:39.1485366+01:00" endTime="2016-05-04T21:04:39.1505380+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d92574cd-4f7d-4da9-bee9-48e7c52dd1b8">
+    </UnitTestResult>
+    <UnitTestResult executionId="b2f861dc-1133-4941-a716-1c0b56c30a6c" testId="a57df7f1-5eb9-d98b-74a7-7faa9c7a5a79" testName="Test_FieldIs5_Pass" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0008009" startTime="2016-05-04T21:04:39.1540409+01:00" endTime="2016-05-04T21:04:39.1570426+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2f861dc-1133-4941-a716-1c0b56c30a6c">
+    </UnitTestResult>
+    <UnitTestResult executionId="9e7f8221-5614-4bdf-9123-b6afce00ac30" testId="79f3a685-fef9-afaa-da15-6223f79b7ee9" testName="Test_FieldIs5_TooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002903" startTime="2016-05-04T21:04:39.1605455+01:00" endTime="2016-05-04T21:04:39.1625465+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e7f8221-5614-4bdf-9123-b6afce00ac30">
+    </UnitTestResult>
+    <UnitTestResult executionId="e3c29c6e-83bb-41f7-910d-6decfb3b11fc" testId="87e85511-7c37-970e-29a0-3062bde22139" testName="Test_FieldIs5_TooShort" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003930" startTime="2016-05-04T21:04:39.1675505+01:00" endTime="2016-05-04T21:04:39.1700518+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3c29c6e-83bb-41f7-910d-6decfb3b11fc">
+    </UnitTestResult>
+    <UnitTestResult executionId="57d7a924-fca5-45da-9b73-a667a214763d" testId="61b47501-8e10-0506-667e-33cbb3e2a9ce" testName="Test_FieldIs8_Pass" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002933" startTime="2016-05-04T21:04:39.1740551+01:00" endTime="2016-05-04T21:04:39.1790582+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57d7a924-fca5-45da-9b73-a667a214763d">
+    </UnitTestResult>
+    <UnitTestResult executionId="83668d08-441f-46b1-b25c-a35b4c86358c" testId="7cebfcf5-9113-a625-8bc1-75fa975b0c37" testName="Test_FieldIs8_TooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002677" startTime="2016-05-04T21:04:39.1830619+01:00" endTime="2016-05-04T21:04:39.1850624+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83668d08-441f-46b1-b25c-a35b4c86358c">
+    </UnitTestResult>
+    <UnitTestResult executionId="81d7d797-ccf5-4772-88aa-8de57902add2" testId="a38c91dd-fc48-8e16-d863-c9f80157d5be" testName="Test_FieldIs8_TooShort" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002792" startTime="2016-05-04T21:04:39.1885658+01:00" endTime="2016-05-04T21:04:39.1905663+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81d7d797-ccf5-4772-88aa-8de57902add2">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea5723a3-4883-4bb2-a45a-74fd551f2830" testId="d3e93d43-5ec9-98ce-11e0-7a516d9f2589" testName="Test_FieldIs5_FailWhenTooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0005204" startTime="2016-05-04T21:04:39.1940688+01:00" endTime="2016-05-04T21:04:39.1965706+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea5723a3-4883-4bb2-a45a-74fd551f2830">
+    </UnitTestResult>
+    <UnitTestResult executionId="caea9b9f-3033-4e43-9fb3-0ad32670787d" testId="7e543321-f9e6-f7ee-f724-de13e02a1e05" testName="Test_FieldIs5_PassWhenSameLength" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003750" startTime="2016-05-04T21:04:39.2005739+01:00" endTime="2016-05-04T21:04:39.2030752+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caea9b9f-3033-4e43-9fb3-0ad32670787d">
+    </UnitTestResult>
+    <UnitTestResult executionId="146ce746-f6e7-44a7-9510-3b9f0f22ad22" testId="053a1c73-1ac9-87b8-485f-894f65a98807" testName="Test_FieldIs5_PassWhenShorter" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004468" startTime="2016-05-04T21:04:39.2070785+01:00" endTime="2016-05-04T21:04:39.2100806+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="146ce746-f6e7-44a7-9510-3b9f0f22ad22">
+    </UnitTestResult>
+    <UnitTestResult executionId="211d7573-5896-4842-a93f-3020f6b9dfbb" testId="7fc93b62-b53f-eac1-7719-6e706235aa82" testName="Test_FieldIs8_FailWhenTooLong" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003981" startTime="2016-05-04T21:04:39.2155841+01:00" endTime="2016-05-04T21:04:39.2195873+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="211d7573-5896-4842-a93f-3020f6b9dfbb">
+    </UnitTestResult>
+    <UnitTestResult executionId="ddbbd4b6-1afe-4f04-8365-7f51afef05c9" testId="3f65da99-a366-92bf-c1b4-b9a8ecb5b8e0" testName="Test_FieldIs8_PassWhenSameLength" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004178" startTime="2016-05-04T21:04:39.2265919+01:00" endTime="2016-05-04T21:04:39.2290936+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddbbd4b6-1afe-4f04-8365-7f51afef05c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="10d21be1-8e2f-4825-b92a-0aa40c82dab8" testId="fd25fb28-ab9a-a68e-ae44-fbd4f6a278ea" testName="Test_FieldIs8_PassWhenShorter" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002848" startTime="2016-05-04T21:04:39.2355982+01:00" endTime="2016-05-04T21:04:39.2375992+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10d21be1-8e2f-4825-b92a-0aa40c82dab8">
+    </UnitTestResult>
+    <UnitTestResult executionId="42236d64-ad23-486e-af81-7ea06dc8a8ea" testId="a53b8ab0-be54-cc44-c216-ec0bf1a83ff0" testName="Test_FieldIsMixed" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004841" startTime="2016-05-04T21:04:39.2411021+01:00" endTime="2016-05-04T21:04:39.2436039+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42236d64-ad23-486e-af81-7ea06dc8a8ea">
+    </UnitTestResult>
+    <UnitTestResult executionId="0e6c2c1c-54df-4b52-b632-719eaa9c7d83" testId="a005b1d0-26ec-bcfa-7cc2-f936d096be6f" testName="Test_FieldIsNotNumeric" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002689" startTime="2016-05-04T21:04:39.2471068+01:00" endTime="2016-05-04T21:04:39.2496082+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e6c2c1c-54df-4b52-b632-719eaa9c7d83">
+    </UnitTestResult>
+    <UnitTestResult executionId="fd1cd8f3-6952-407b-bf9c-d16fb40419b8" testId="f214cb25-b452-b491-308e-0e3c16494471" testName="Test_FieldIsNumeric" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003754" startTime="2016-05-04T21:04:39.2531106+01:00" endTime="2016-05-04T21:04:39.2561123+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd1cd8f3-6952-407b-bf9c-d16fb40419b8">
+    </UnitTestResult>
+    <UnitTestResult executionId="29b7137c-978a-42e1-b6fa-4daf67c8d718" testId="86bee6bf-57a6-004e-abe1-1acd57d604d5" testName="Test_FieldIsMixed" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0004875" startTime="2016-05-04T21:04:39.2606168+01:00" endTime="2016-05-04T21:04:39.2631186+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29b7137c-978a-42e1-b6fa-4daf67c8d718">
+    </UnitTestResult>
+    <UnitTestResult executionId="086e399e-7023-43ba-b9ed-e3b4d6bd8997" testId="4cc23d71-e883-e00b-a60b-e0e792a57372" testName="Test_FieldIsNotNumeric" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0002604" startTime="2016-05-04T21:04:39.2676209+01:00" endTime="2016-05-04T21:04:39.2701240+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="086e399e-7023-43ba-b9ed-e3b4d6bd8997">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d0cac7e-e3ee-4541-93bd-ad48581e2f2c" testId="baa47a15-4d80-c7f2-322e-3aca25591a25" testName="Test_FieldIsNumeric" computerName="DESKTOP-HUE9FNP" duration="00:00:00.0003382" startTime="2016-05-04T21:04:39.2741255+01:00" endTime="2016-05-04T21:04:39.2766273+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d0cac7e-e3ee-4541-93bd-ad48581e2f2c">
+    </UnitTestResult>
+  </Results>
+</TestRun>
