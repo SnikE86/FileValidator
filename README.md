@@ -33,13 +33,14 @@ These validators can be used in any sensible combination on column indexes in th
 <validators>
     <add key="0" value="ValidatorDate_YYMMDD" />
     <add key="1" value="ValidatorNumber" />
-    <add key="2" value="ValidatorFieldLength_10" />
-    <add key="3" value="ValidatorDate_YYYYMMDD" />
-    <add key="4" value="ValidatorNoNumbers" />
-    <add key="5" value="ValidatorFieldIsNotBlank" />
-    <add key="6" value="ValidatorFieldIsNotBlank" />
-    <add key="7" value="ValidatorDate_YYMMDD" />
-    <add key="8" value="ValidatorMaxFieldLength_150" />
+    <add key="1" value="ValidatorFieldLength_10" />
+    <add key="2" value="ValidatorDate_YYYYMMDD" />
+    <add key="3" value="ValidatorNoNumbers" />
+    <add key="3" value="ValidatorFieldLength_15" />
+    <add key="4" value="ValidatorFieldIsNotBlank" />
+    <add key="4" value="ValidatorFieldIsNotBlank" />
+    <add key="5" value="ValidatorDate_YYMMDD" />
+    <add key="5" value="ValidatorMaxFieldLength_150" />
 </validators>
 ```
 
