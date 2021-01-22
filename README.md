@@ -29,16 +29,18 @@ The available validators are:
 
 These validators can be used in any sensible combination on column indexes in the file. Column indexes begin with a zero. For example:
 
->\<validators\>
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="0" value="ValidatorDate\_YYMMDD" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="1" value="ValidatorNumber" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="2" value="ValidatorFieldLength\_10" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="3" value="ValidatorDate\_YYYYMMDD" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="4" value="ValidatorNoNumbers" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="5" value="ValidatorFieldIsNotBlank" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="6" value="ValidatorFieldIsNotBlank" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="7" value="ValidatorDate\_YYMMDD" />
->&nbsp;&nbsp;&nbsp;&nbsp;\<add key="8" value="ValidatorMaxFieldLength\_150" />
->\</validators\>
+```
+<validators>
+    <add key="0" value="ValidatorDate_YYMMDD" />
+    <add key="1" value="ValidatorNumber" />
+    <add key="2" value="ValidatorFieldLength_10" />
+    <add key="3" value="ValidatorDate_YYYYMMDD" />
+    <add key="4" value="ValidatorNoNumbers" />
+    <add key="5" value="ValidatorFieldIsNotBlank" />
+    <add key="6" value="ValidatorFieldIsNotBlank" />
+    <add key="7" value="ValidatorDate_YYMMDD" />
+    <add key="8" value="ValidatorMaxFieldLength_150" />
+</validators>
+```
 
 File Validator created by Michael Ekins 2015
