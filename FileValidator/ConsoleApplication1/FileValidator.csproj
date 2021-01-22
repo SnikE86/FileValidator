@@ -61,7 +61,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>acceptFile.ico</ApplicationIcon>
+    <ApplicationIcon>fileValidatorLogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="acceptFile.ico" />
+    <Content Include="fileValidatorLogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
