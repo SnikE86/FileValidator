@@ -2,6 +2,8 @@
 
 # FileValidator
 
+Download installer from [www.michaelekins.co.uk](https://www.michaelekins.co.uk/projects.html#FileValidator)
+
 FileValidator is a tool for validating column types in a csv file using a number of validators.
 
 It is important to set up the config file correctly before using the program:
