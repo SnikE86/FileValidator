@@ -20,11 +20,11 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\Utilities\FileValidator
 DisableProgramGroupPage=yes
-LicenseFile=C:\Source\Other\FileValidator\LICENSE
+LicenseFile={#SourcePath}..\LICENSE
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputBaseFilename=FileValidatorInstaller
-SetupIconFile=C:\Source\Other\FileValidator\FileValidator\fileValidatorLogo.ico
+SetupIconFile={#SourcePath}..\FileValidator\ConsoleApplication1\fileValidatorLogo.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -36,9 +36,9 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Source\Other\FileValidator\FileValidator\ConsoleApplication1\bin\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Source\Other\FileValidator\FileValidator\File Validator.pdf"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Source\Other\FileValidator\FileValidator\ConsoleApplication1\bin\Release\FileValidator.exe.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}..\FileValidator\ConsoleApplication1\bin\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}..\FileValidator\File Validator.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}..\FileValidator\ConsoleApplication1\bin\Release\FileValidator.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
