@@ -1,4 +1,4 @@
-<img src="/FileValidator/fileValidatorLogo.ico"></img>
+<img src="/FileValidator/ConsoleApplication1/fileValidatorLogo.ico"></img>
 
 # FileValidator
 
